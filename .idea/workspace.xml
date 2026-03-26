@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bac9df5-cef1-4d5f-b3e8-0865be0543ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/Newlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Cart01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Cart02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Nimesh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slide01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slide02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slide03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slideone.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +27,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,6 +62,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Quickcuttube\Desktop\MyportfolioWebSite\MyPortfolio\assets" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Quickcuttube\Desktop\MyportfolioWebSite\MyPortfolio\assets" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -73,7 +85,11 @@
       <workItem from="1773894869130" duration="2422000" />
       <workItem from="1774018770025" duration="43000" />
       <workItem from="1774168129378" duration="2222000" />
-      <workItem from="1774188521420" duration="1275000" />
+      <workItem from="1774188521420" duration="9272000" />
+      <workItem from="1774248664828" duration="5540000" />
+      <workItem from="1774450967369" duration="4047000" />
+      <workItem from="1774497265967" duration="1036000" />
+      <workItem from="1774500322523" duration="8349000" />
     </task>
     <servers />
   </component>
