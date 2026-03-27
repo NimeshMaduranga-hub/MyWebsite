@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nimesh Maduranga Portfolio">
     <meta property="og:description" content="Explore my projects and UI/UX designs">
-  <!--methenna mage domain name eka denna one -->
+    <!--methenna mage domain name eka denna one -->
     <meta property="og:image" content="https://yourdomain.com/preview.jpg">
     <meta property="og:url" content="https://yourdomain.com">
 
@@ -19,7 +19,6 @@
     <!--Meken thamai  Browser tab eke udin penwana nama Issarahin logo ekak daganne  -->
     <link rel="icon" href="assets/Newlogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
 
 
 </head>
@@ -35,8 +34,8 @@
     </div>
 
     <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#">Services</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
@@ -47,9 +46,9 @@
 </header>
 
 
-<section class="hero">
-    
-        <img src="assets/myimage.png"alt="myImage" style="position: absolute;z-index: 10;left: -50px" width="500" >
+<section id="home" class="hero">
+
+    <img id="heroimagemy" src="assets/imagehero.png" alt="myImage" style="position: absolute;z-index: 5;left: -28vh" width="850">
 
     <canvas id="neural-network-canvas"></canvas>
 
@@ -83,9 +82,38 @@
 
 </section>
 
-<section class="about">
-    <p> Hello About</p>
+<section id="about" class="about">
+    <div>
+    <div class="about-container">
+        <div class="about-image">
+        <img src="assets/imagemy%20(1).png" alt="Nimesh Maduranga">
+        </div>
+    </div>
+    <div class="about-content">
+        <h2>About Me</h2>
+
+        <p class="about-text">
+            I'm <strong>Nimesh Maduranga</strong>,a passionate Full Stack Developer
+            and UI/UX Designer who loves creating modern, user-friendly digital experiences.
+            I specialize in building responsive websites, interactive 3D interfaces, and
+            clean UI designs.
+        </p>
+    </div>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Three.js</span>
+        <span>Figma</span>
+        <span>UI/UX</span>
+    </div>
+
+    <a href="#contact" class="about-btn">Contact Me</a>
+</div>
+
 </section>
+
 
 <footer class="footer">
     <div>
@@ -104,11 +132,12 @@
 
 <script type="module">
     import * as THREE from 'three';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-    import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-    import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-    import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-    import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+    import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+    import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+    import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+    import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+    import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+
     const config = {
         paused: false,
         activePaletteIndex: 0,
@@ -153,6 +182,7 @@
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setClearColor(0x000000);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
+
     function createStarfield() {
         const count = 8000;
         const positions = [];
@@ -183,7 +213,7 @@
         geo.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
         const mat = new THREE.ShaderMaterial({
             uniforms: {
-                uTime: { value: 0 }
+                uTime: {value: 0}
             },
             vertexShader: `
                 attribute float size;
@@ -214,6 +244,7 @@
         });
         return new THREE.Points(geo, mat);
     }
+
     const starField = createStarfield();
     scene.add(starField);
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -236,20 +267,24 @@
     composer.addPass(bloomPass);
     composer.addPass(new OutputPass());
     const pulseUniforms = {
-        uTime: { value: 0.0 },
-        uPulsePositions: { value: [
+        uTime: {value: 0.0},
+        uPulsePositions: {
+            value: [
                 new THREE.Vector3(1e3, 1e3, 1e3),
                 new THREE.Vector3(1e3, 1e3, 1e3),
                 new THREE.Vector3(1e3, 1e3, 1e3)
-            ]},
-        uPulseTimes: { value: [-1e3, -1e3, -1e3] },
-        uPulseColors: { value: [
+            ]
+        },
+        uPulseTimes: {value: [-1e3, -1e3, -1e3]},
+        uPulseColors: {
+            value: [
                 new THREE.Color(1, 1, 1),
                 new THREE.Color(1, 1, 1),
                 new THREE.Color(1, 1, 1)
-            ]},
-        uPulseSpeed: { value: 18.0 },
-        uBaseNodeSize: { value: 0.6 }
+            ]
+        },
+        uPulseSpeed: {value: 18.0},
+        uBaseNodeSize: {value: 0.6}
     };
     const noiseFunctions = `
     vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
@@ -494,6 +529,7 @@
             gl_FragColor = vec4(finalColor, alpha * distanceFade);
         }`
     };
+
     class Node {
         constructor(position, level = 0, type = 0) {
             this.position = position;
@@ -503,19 +539,23 @@
             this.size = type === 0 ? THREE.MathUtils.randFloat(0.8, 1.4) : THREE.MathUtils.randFloat(0.5, 1.0);
             this.distanceFromRoot = 0;
         }
+
         addConnection(node, strength = 1.0) {
             if (!this.isConnectedTo(node)) {
-                this.connections.push({ node, strength });
-                node.connections.push({ node: this, strength });
+                this.connections.push({node, strength});
+                node.connections.push({node: this, strength});
             }
         }
+
         isConnectedTo(node) {
             return this.connections.some(conn => conn.node === node);
         }
     }
+
     function generateNeuralNetwork(formationIndex, densityFactor = 1.0) {
         let nodes = [];
         let rootNode;
+
         function generateCrystallineSphere() {
             rootNode = new Node(new THREE.Vector3(0, 0, 0), 0, 0);
             rootNode.size = 2.0;
@@ -576,6 +616,7 @@
                 }
             }
         }
+
         function generateHelixLattice() {
             rootNode = new Node(new THREE.Vector3(0, 0, 0), 0, 0);
             rootNode.size = 1.8;
@@ -654,12 +695,14 @@
                 }
             }
         }
+
         function generateFractalWeb() {
             rootNode = new Node(new THREE.Vector3(0, 0, 0), 0, 0);
             rootNode.size = 1.6;
             nodes.push(rootNode);
             const branches = 6;
             const maxDepth = 4;
+
             function createBranch(startNode, direction, depth, strength, scale) {
                 if (depth > maxDepth) return;
                 const branchLength = 5 * scale;
@@ -686,6 +729,7 @@
                     }
                 }
             }
+
             for (let i = 0; i < branches; i++) {
                 const phi = Math.acos(1 - 2 * (i + 0.5) / branches);
                 const theta = Math.PI * (1 + Math.sqrt(5)) * i;
@@ -727,10 +771,17 @@
                 }
             }
         }
+
         switch (formationIndex % 3) {
-            case 0: generateCrystallineSphere(); break;
-            case 1: generateHelixLattice(); break;
-            case 2: generateFractalWeb(); break;
+            case 0:
+                generateCrystallineSphere();
+                break;
+            case 1:
+                generateHelixLattice();
+                break;
+            case 2:
+                generateFractalWeb();
+                break;
         }
         if (densityFactor < 1.0) {
             const targetCount = Math.ceil(nodes.length * Math.max(0.3, densityFactor));
@@ -750,11 +801,13 @@
             });
             console.log(`Density: ${nodes.length} nodes`);
         }
-        return { nodes, rootNode };
+        return {nodes, rootNode};
     }
+
     let neuralNetwork = null;
     let nodesMesh = null;
     let connectionsMesh = null;
+
     function createNetworkVisualization(formationIndex, densityFactor = 1.0) {
         console.log(`Creating formation ${formationIndex}, density ${densityFactor}`);
         if (nodesMesh) {
@@ -871,6 +924,7 @@
             }
         });
     }
+
     function updateTheme(paletteIndex) {
         config.activePaletteIndex = paletteIndex;
         if (!nodesMesh || !connectionsMesh || !neuralNetwork) return;
@@ -923,11 +977,13 @@
             }
         });
     }
+
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
     const interactionPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
     const interactionPoint = new THREE.Vector3();
     let lastPulseIndex = 0;
+
     function triggerPulse(clientX, clientY) {
         pointer.x = (clientX / window.innerWidth) * 2 - 1;
         pointer.y = -(clientY / window.innerHeight) * 2 + 1;
@@ -949,6 +1005,7 @@
             }
         }
     }
+
     renderer.domElement.addEventListener('click', (e) => {
         if (e.target.closest('.glass-panel, #control-buttons')) return;
         if (!config.paused) triggerPulse(e.clientX, e.clientY);
@@ -959,7 +1016,7 @@
         if (e.touches.length > 0 && !config.paused) {
             triggerPulse(e.touches[0].clientX, e.touches[0].clientY);
         }
-    }, { passive: false });
+    }, {passive: false});
     const themeButtons = document.querySelectorAll('.theme-button');
     themeButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -991,7 +1048,9 @@
         config.currentFormation = (config.currentFormation + 1) % config.numFormations;
         createNetworkVisualization(config.currentFormation, config.densityFactor);
         controls.autoRotate = false;
-        setTimeout(() => { controls.autoRotate = true; }, 2500);
+        setTimeout(() => {
+            controls.autoRotate = true;
+        }, 2500);
     });
     pausePlayBtn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -1003,9 +1062,12 @@
         e.stopPropagation();
         controls.reset();
         controls.autoRotate = false;
-        setTimeout(() => { controls.autoRotate = true; }, 2000);
+        setTimeout(() => {
+            controls.autoRotate = true;
+        }, 2000);
     });
     const clock = new THREE.Clock();
+
     function animate() {
         requestAnimationFrame(animate);
         const t = clock.getElapsedTime();
@@ -1024,12 +1086,14 @@
         controls.update();
         composer.render();
     }
+
     function init() {
         createNetworkVisualization(config.currentFormation, config.densityFactor);
         document.querySelectorAll('.theme-button').forEach(b => b.classList.remove('active'));
         document.querySelector(`.theme-button[data-theme="${config.activePaletteIndex}"]`).classList.add('active');
         animate();
     }
+
     function onWindowResize() {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
