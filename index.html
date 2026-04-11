@@ -37,13 +37,18 @@
             <img src="assets/navbarimage.png" alt="profile">
         </div>
 
-
-
     </div>
 
 </nav>
 <div class="hero-badge">Available for freelance</div>
 
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
 
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
 </body>
 </html>
