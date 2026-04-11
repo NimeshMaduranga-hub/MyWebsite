@@ -310,5 +310,43 @@ html {
 }
 
 
+/*================*/   /* Animations */
+.animateheroSkill{
+    display: flex;
+    position: relative;
+    top: 300px;
+    width: 250px;
+    left: 5px;
+    align-items: center;
+    text-align: center;
+    right: 300px;
+    border: solid white;
+    border-radius: 10px;
+    animation: float   5s ease-in-out infinite alternate;
+}
 
+.animateheroSkill  div{
+    color: #f4f4f5;
+    font-size: 34px;
+}
 
+#smallid{
+    color: #9e9eae;
+    opacity: 10;
+}
+.float-1 {
+    animation: float  5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px) rotate(12deg);
+    }
+    50% {
+        transform: translateY(100px) rotate(12deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(12deg);
+
+    }
+}
