@@ -316,22 +316,48 @@ html {
     position: relative;
     top: 300px;
     width: 250px;
-    left: 5px;
+    height: 100px;
+    left: 10px;
     align-items: center;
+    /*
     text-align: center;
+    */
     right: 300px;
-    border: solid white;
+    border: 2px solid #12c0c6;
     border-radius: 10px;
     animation: float   5s ease-in-out infinite alternate;
 }
+.fronteendicon{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 25px;
+    border-radius: 10px;
+    align-items: center;
+    background: #41453b;
+}
+.fa-solid{
+    position: relative;
+    width: 8px;
+    top: 5px;
+    left: 2.5px;
 
+}
+.skilnamebig{
+    position: relative;
+    left: 80px;
+    color: #ffb500;
+}
 .animateheroSkill  div{
     color: #f4f4f5;
     font-size: 34px;
 }
 
 #smallid{
-    color: #9e9eae;
+    position: relative;
+    left: -70px;
+    top: 30px;
+    color: #98f106;
     opacity: 10;
 }
 .float-1 {
@@ -350,3 +376,4 @@ html {
 
     }
 }
+
