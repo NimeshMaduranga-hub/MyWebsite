@@ -115,7 +115,8 @@ html {
         color: white;
         font-size: 28px;
         position: relative;
-        left: 200px;
+        left: 260px;
+
     }
 
     .glass{
@@ -153,6 +154,8 @@ html {
         cursor: pointer;
         color: white;
         font-size: 28px;
+        left: 230px;
+
     }
 
     .glass{
@@ -166,7 +169,7 @@ html {
     .menu-toggle{
         display: block;
         position: relative;
-        left: 80px;
+        left: 180px;
         color: #f4f4f5;
         font-size: 28px;
         cursor: pointer;
@@ -195,19 +198,19 @@ html {
 
     .glass{
         max-width: 20px;
-        min-width: 400px;
+        min-width: 480px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .glass{
         max-width: 20px;
-        min-width: 340px;
+        min-width: 400px;
 
     }
     .menu-toggle {
         position: relative;
-        left: 60px;
+        left: 150px;
         display: block;
         color: #f4f4f5;
 
@@ -219,6 +222,27 @@ html {
 
 
 }
+@media (max-width: 400px) {
+    .glass{
+        max-width: 20px;
+        min-width: 340px;
+
+    }
+    .menu-toggle {
+        position: relative;
+        left: 110px;
+        display: block;
+        color: #f4f4f5;
+
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
 @media (max-width: 375px) {
 
     .glass{
@@ -228,7 +252,7 @@ html {
     }
     .menu-toggle {
         position: relative;
-        left: 60px;
+        left: 95px;
         display: block;
         color: #f4f4f5;
 
@@ -242,12 +266,12 @@ html {
 @media (max-width: 320px) {
     .glass{
         max-width: 20px;
-        min-width: 240px;
+        min-width: 260px;
 
     }
     .menu-toggle {
         position: relative;
-        left: 40px;
+        left: 75px;
         display: block;
         color: #f4f4f5;
 
