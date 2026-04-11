@@ -44,6 +44,13 @@
 </nav>
 <div class="hero-badge">Available for freelance</div>
 
+<script>
+    let menu = document.getElementById("menuToggle");
+    let nav = document.getElementById("navLinks");
 
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
 </body>
 </html>
