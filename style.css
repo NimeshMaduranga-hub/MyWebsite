@@ -73,154 +73,129 @@ html {
 }
 
 @media (max-width: 1000px) {
-    .nav-links{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 80px;
-        left: 20px;
-        background: rgba(0,0,0,0.8);
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .nav-link{
-        margin: 10px 0;
-        left: -5px;
-        text-align: left;
-    }
-    .nav-link::after{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: orange;
-        transition: width 0.3s ease;
-    }
 
     .glass{
         max-width: 20px;
-        min-width: 850px;
+        min-width: 800px;
 
     }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 840px) {
+
     .nav-links{
-        display: flex;
+        display: none;
         flex-direction: column;
+
         align-items: flex-start;
         position: absolute;
         top: 80px;
-        left: 20px;
-        background: rgba(0,0,0,0.8);
+        left: -10vh;
+        width: 100%;
+        background: rgba(0,0,0,0.85);
         padding: 15px;
         border-radius: 10px;
+        z-index: 999;
+
+    }
+
+    .nav-links.active{
+        display: flex;
     }
 
     .nav-link{
         margin: 10px 0;
-        left: -5px;
         text-align: left;
+
     }
-    .nav-link::after{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: orange;
-        transition: width 0.3s ease;
+
+    .menu-toggle{
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 28px;
+        position: relative;
+        left: 200px;
     }
 
     .glass{
-        max-width: 20px;
-        min-width: 690px;
-
+        max-width: 100%;
+        min-width: auto;
     }
 }
 
 @media (max-width: 700px) {
+
     .nav-links{
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
         top: 80px;
-        left: 20px;
-        background: rgba(0,0,0,0.8);
+        left: -10vh;
+        background: rgba(0,0,0,0.85);
         padding: 15px;
         border-radius: 10px;
+        z-index: 999;
+    }
+
+    .nav-links.active{
+        display: flex;
     }
 
     .nav-link{
         margin: 10px 0;
-        left: -5px;
         text-align: left;
     }
-    .nav-link::after{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: orange;
-        transition: width 0.3s ease;
+
+    .menu-toggle{
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 28px;
     }
 
     .glass{
-        max-width: 20px;
-        min-width: 600px;
-
+        max-width: 100%;
+        min-width: auto;
     }
 }
-
 
 @media (max-width: 600px) {
 
     .menu-toggle{
+        display: block;
         position: relative;
         left: 80px;
-        display: block;
         color: #f4f4f5;
+        font-size: 28px;
+        cursor: pointer;
     }
 
     .nav-links{
         display: none;
         flex-direction: column;
-        align-items: flex-start;
         position: absolute;
         top: 80px;
-        left: 20px;
-        background: rgba(0,0,0,0.8);
+        left: -10vh;
+        background: rgba(0,0,0,0.9);
         padding: 15px;
         border-radius: 10px;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-link{
-        display: none;
         margin: 10px 0;
         text-align: left;
     }
-    .nav-link::after{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: orange;
-        transition: width 0.3s ease;
-    }
+
     .glass{
         max-width: 20px;
         min-width: 400px;
-
     }
 }
 
@@ -237,6 +212,11 @@ html {
         color: #f4f4f5;
 
     }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
 @media (max-width: 375px) {
@@ -253,6 +233,10 @@ html {
         color: #f4f4f5;
 
     }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 320px) {
@@ -267,6 +251,10 @@ html {
         display: block;
         color: #f4f4f5;
 
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
     }
 }
 
