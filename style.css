@@ -72,7 +72,41 @@ html {
     animation: autoRotate 2s linear infinite;
 }
 
+@media (max-width: 1000px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        background: rgba(0,0,0,0.8);
+        padding: 15px;
+        border-radius: 10px;
+    }
 
+    .nav-link{
+        margin: 10px 0;
+        left: -5px;
+        text-align: left;
+    }
+    .nav-link::after{
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: orange;
+        transition: width 0.3s ease;
+    }
+
+    .glass{
+        max-width: 20px;
+        min-width: 850px;
+
+    }
+}
 
 @media (max-width: 885px) {
     .nav-links{
@@ -105,21 +139,53 @@ html {
 
     .glass{
         max-width: 20px;
-        min-width: 550px;
+        min-width: 690px;
 
     }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 700px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        background: rgba(0,0,0,0.8);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .nav-link{
+        margin: 10px 0;
+        left: -5px;
+        text-align: left;
+    }
+    .nav-link::after{
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: orange;
+        transition: width 0.3s ease;
+    }
+
     .glass{
         max-width: 20px;
-        min-width: 200px;
+        min-width: 600px;
 
     }
 }
+
 
 @media (max-width: 600px) {
 
     .menu-toggle{
+        position: relative;
+        left: 80px;
         display: block;
         color: #f4f4f5;
     }
@@ -153,7 +219,7 @@ html {
     }
     .glass{
         max-width: 20px;
-        min-width: 450px;
+        min-width: 400px;
 
     }
 }
@@ -161,10 +227,12 @@ html {
 @media (max-width: 400px) {
     .glass{
         max-width: 20px;
-        min-width: 300px;
+        min-width: 340px;
 
     }
     .menu-toggle {
+        position: relative;
+        left: 60px;
         display: block;
         color: #f4f4f5;
 
@@ -172,18 +240,35 @@ html {
 
 }
 @media (max-width: 375px) {
+
     .glass{
         max-width: 20px;
-        min-width: 150px;
+        min-width: 300px;
 
     }
     .menu-toggle {
+        position: relative;
+        left: 60px;
         display: block;
         color: #f4f4f5;
 
     }
 }
 
+@media (max-width: 320px) {
+    .glass{
+        max-width: 20px;
+        min-width: 240px;
+
+    }
+    .menu-toggle {
+        position: relative;
+        left: 40px;
+        display: block;
+        color: #f4f4f5;
+
+    }
+}
 
 
 .nav-link{
