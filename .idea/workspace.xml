@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bac9df5-cef1-4d5f-b3e8-0865be0543ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/Backgroundimage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/creative.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/java.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/navbarimage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footerStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imagehero.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/imagehero.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -51,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Quickcuttube/Desktop/MyportfolioWebSite/MyPortfolio/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Quickcuttube/Desktop/layerd new project/Mobileshop&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -110,6 +99,9 @@
       <workItem from="1775644228669" duration="12328000" />
       <workItem from="1775707016679" duration="1272000" />
       <workItem from="1775722963839" duration="3792000" />
+      <workItem from="1775984587288" duration="8284000" />
+      <workItem from="1776068214161" duration="13236000" />
+      <workItem from="1776176692557" duration="5217000" />
     </task>
     <servers />
   </component>
