@@ -707,7 +707,7 @@ html {
     position: fixed;
     top: 50px;
 
-    left: clamp(120px, 15%, 420px);
+    left: clamp(120px, 20%, 420px);
 
     transform: none;
 
