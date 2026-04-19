@@ -664,7 +664,7 @@ html {
 
 #tagfreelance{
     position: fixed;
-    top: 5px;
+    top: 4px;
     left: 30px;
     color: white;
     font-size: 11px;
@@ -714,7 +714,6 @@ html {
     animation: blink 1s infinite;
 }.chat-wrapper{
      position: fixed;
-
      top: 140px;
      left: 55%;
      transform: translateX(-50%);
