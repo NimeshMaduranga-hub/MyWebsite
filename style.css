@@ -705,10 +705,10 @@ html {
 }
 .chat-wrapper{
     position: fixed;
-    top: 70px;
+
+    top: clamp(50px, 8vh, 90px);
 
     left: clamp(120px, 20%, 420px);
-
     transform: none;
 
     display: flex;
@@ -718,7 +718,12 @@ html {
 
     z-index: 9999;
 }
-
+@media (max-width: 400px){
+    .chat-wrapper{
+        top: 110px;
+        left: 50px;
+    }
+}
 .chaticon{
     position: relative;
     left: 65px;
