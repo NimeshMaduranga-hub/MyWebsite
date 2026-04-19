@@ -73,45 +73,7 @@ html {
 
 
 }
-@media (max-width: 1280px) {
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 190px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
-}
 @media (max-width: 1000px) {
 
     .glass{
@@ -119,49 +81,7 @@ html {
         min-width: 800px;
 
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
 
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 140px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 @media (max-width: 900px) {
 
@@ -170,49 +90,7 @@ html {
         min-width: 800px;
 
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
 
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 120px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 840px) {
@@ -255,49 +133,7 @@ html {
         max-width: 100%;
         min-width: auto;
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
 
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 95px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 700px) {
@@ -337,49 +173,7 @@ html {
         max-width: 100%;
         min-width: auto;
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
 
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 95px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -418,49 +212,6 @@ html {
         max-width: 20px;
         min-width: 480px;
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
-
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 120px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -490,51 +241,6 @@ html {
         position: absolute;
         visibility: hidden;
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
-
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 95px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
-
-
 }
 @media (max-width: 400px) {
     .glass{
@@ -564,51 +270,6 @@ html {
         position: absolute;
         visibility: hidden;
     }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
-
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 75px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
-
-
 }
 
 @media (max-width: 375px) {
@@ -639,49 +300,6 @@ html {
         display: none !important;
         position: absolute;
         visibility: hidden;
-    }
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
-
-    }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 82px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
     }
 
 }
@@ -714,49 +332,6 @@ html {
         visibility: hidden;
     }
 
-    .chatbtnc{
-        position: fixed;
-        top: 50px;
-        left: -110px;
-
-          }
-    #chatbtn {
-        position: fixed;
-        width: 120px;
-        height: 55px;
-        top: 23px;
-        left: 76px;
-        border: 2px solid rgb(100, 210, 205);
-        border-radius: 20px;
-        color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: rgb(9, 41, 41);
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #chatbtn {
-        line-height: 55px;
-        text-align: center;
-    }
-
-    .chaticon {
-        position: relative;
-        display: flex;
-        top: 10px;
-        left: calc(50% + 70px);
-        transform: translateX(-50%);
-    }
-
-    #chaticontag {
-        position: relative;
-        display: flex;
-        top: 30px;
-        font-size: 28px;
-    }
 }
 
 
@@ -1128,29 +703,48 @@ html {
     border-radius: 100%;
     border: 2px solid #1df406;
 }
-.chatcontact{
 
+#chatbtn {
+    position: fixed;
+    top: 25px;
+    left: 25%;
+    transform: translateX(-50%);
+
+    width: clamp(90px, 12vw, 120px);
+    height: clamp(45px, 6vw, 55px);
+
+    border: 2px solid rgb(100, 210, 205);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(9, 41, 41);
+    color: white;
+    text-decoration: none;
+
+    font-size: clamp(14px, 2vw, 18px);
+    transition: 0.3s;
 }
 
-.chaticon{
+#chatbtn:hover {
+    background: white;
+    color: rgb(46, 170, 166);
+}
+.chaticon {
     position: fixed;
     top: 5px;
-    left: 370px;
+    left: 30%;
+    transform: translateX(-50%);
 }
-#chaticontag{
-    font-size: 35px;
-}
+
 #chaticontag {
-    font-size: 35px;
+    font-size: clamp(22px, 4vw, 35px);
     transition: 0.3s;
 }
 
 .chaticon:hover #chaticontag {
     transform: scale(1.2);
-}
-
-#chatbtn:hover {
-    background-color: white;
-    color: rgb(46, 170, 166);
 }
 
