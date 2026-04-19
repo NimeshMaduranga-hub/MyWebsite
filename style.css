@@ -705,9 +705,9 @@ html {
 }
 .chat-wrapper{
     position: fixed;
-    top: 25px;
+    top: 50px;
 
-    left: clamp(120px, 20%, 420px);
+    left: clamp(120px, 15%, 420px);
 
     transform: none;
 
@@ -721,7 +721,7 @@ html {
 
 .chaticon{
     position: relative;
-    left: 60px;
+    left: 65px;
 
     display: flex;
     justify-content: center;
