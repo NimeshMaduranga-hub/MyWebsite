@@ -661,7 +661,7 @@ html {
 }
 .freelancelivetag{
     position: fixed;
-    top: 40px;
+    top: 100px;
     right: 280px;
 
     display: flex;
@@ -676,11 +676,11 @@ html {
     z-index: 9999;
 }
 @media (max-width: 600px) {
-
     .freelancelivetag{
-        top: 90px;
-        right: 10px;
-        width: 170px;
+        top: 119px;
+        left: 240px;
+        width: 200px;
+        height: 25px;
     }
 }
 .tagfreelance{
