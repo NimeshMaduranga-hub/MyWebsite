@@ -672,8 +672,8 @@ html {
 }
 .freelanceclass{
     position: fixed;
-    top: 120px;
-    left: 50%;
+    top: 100px;
+    left: 70%;
     transform: translateX(-50%);
     border: solid #c8c8c8;
     background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.2), transparent);
@@ -714,8 +714,8 @@ html {
     animation: blink 1s infinite;
 }.chat-wrapper{
      position: fixed;
-     top: 140px;
-     left: 55%;
+     top: 120px;
+     left: 75%;
      transform: translateX(-50%);
 
      display: flex;
