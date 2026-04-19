@@ -330,38 +330,45 @@ html {
 
     .chatbtnc{
         position: fixed;
-        left:-165px;
-        width: 100px;
-        height: 20px;
+        top: 50px;
+        left: -110px;
 
           }
-  #chatbtn {
-        width:  0px;
-        height: 20px;
-
+    #chatbtn {
+        position: fixed;
+        width: 120px;
+        height: 55px;
+        top: 23px;
+        left: 75px;
         border: 2px solid rgb(100, 210, 205);
-        border-radius: 15px;
-
-        background-color: rgb(9, 41, 41);
+        border-radius: 20px;
         color: white;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
+        background-color: rgb(9, 41, 41);
         text-decoration: none;
+        font-size: 20px;
+    }
+    #chatbtn {
+        line-height: 55px;
+        text-align: center;
     }
 
     .chaticon {
-        display: none;
-        position: fixed;
-        top: 8px;
+        position: relative;
+        display: flex;
+        top: 10px;
         left: calc(50% + 70px);
         transform: translateX(-50%);
     }
 
     #chaticontag {
-        display: none;
+        position: relative;
+        display: flex;
+        top: 30px;
         font-size: 28px;
     }
 }
@@ -738,20 +745,7 @@ html {
 .chatcontact{
 
 }
-#chatbtn{
-    position: relative;
-    width: 120px;
-    height: 55px;
-    top: 23px;
-    left: 250px;
-    border: 2px solid rgb(100, 210, 205);
-    border-radius: 20px;
-    color: white;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(9, 41, 41);
-    text-decoration: none;
-}
+
 .chaticon{
     position: fixed;
     top: 5px;
@@ -773,3 +767,21 @@ html {
     background-color: white;
     color: rgb(46, 170, 166);
 }
+
+
+
+/*
+#chatbtn{
+    position: relative;
+    width: 120px;
+    height: 55px;
+    top: 23px;
+    left: 250px;
+    border: 2px solid rgb(100, 210, 205);
+    border-radius: 20px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(9, 41, 41);
+    text-decoration: none;
+}*/
