@@ -720,8 +720,8 @@ html {
 }
 @media (max-width: 400px){
     .chat-wrapper{
-        top: 110px;
-        left: 50px;
+        top: 60px;
+        left: 60px;
     }
 }
 .chaticon{
@@ -738,7 +738,7 @@ html {
     transition: 0.3s;
 }
 
-/* BUTTON */
+
 #chatbtn{
     width: clamp(100px, 12vw, 120px);
     height: clamp(45px, 6vw, 55px);
