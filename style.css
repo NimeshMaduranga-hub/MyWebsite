@@ -675,14 +675,7 @@ html {
 
     z-index: 9999;
 }
-@media (max-width: 600px) {
-    .freelancelivetag{
-        top: 119px;
-        left: 230px;
-        width: 200px;
-        height: 25px;
-    }
-}
+
 .tagfreelance{
     position: relative;
     display: flex;
@@ -734,6 +727,12 @@ html {
     .chat-wrapper{
         top: 60px;
         left: 60px;
+    }
+    .freelancelivetag{
+        top: 119px;
+        left: 230px;
+        width: 200px;
+        height: 25px;
     }
 }
 .chaticon{
