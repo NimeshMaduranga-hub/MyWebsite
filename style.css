@@ -661,8 +661,8 @@ html {
 }
 .freelancelivetag{
     position: fixed;
-    top: 100px;
-    right: 600px;
+    top: 150px;
+    right: 900px;
 
     display: flex;
     width: 200px;
