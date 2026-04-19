@@ -293,6 +293,10 @@ html {
         position: absolute;
         visibility: hidden;
     }
+    .chatbtnc{
+        display: flex;
+        left: 100px;
+    }
 
 }
 
@@ -322,6 +326,43 @@ html {
         display: none !important;
         position: absolute;
         visibility: hidden;
+    }
+
+    .chatbtnc{
+        position: fixed;
+        left:-165px;
+        width: 100px;
+        height: 20px;
+
+          }
+  #chatbtn {
+        width:  0px;
+        height: 20px;
+
+        border: 2px solid rgb(100, 210, 205);
+        border-radius: 15px;
+
+        background-color: rgb(9, 41, 41);
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+    }
+
+    .chaticon {
+        display: none;
+        position: fixed;
+        top: 8px;
+        left: calc(50% + 70px);
+        transform: translateX(-50%);
+    }
+
+    #chaticontag {
+        display: none;
+        font-size: 28px;
     }
 }
 
@@ -655,7 +696,7 @@ html {
     display: flex;
     top: 40px;
     left: 880px;
-    width: 230px;
+    width: 200px;
     height: 25px;
     color: #cd8d15;
     border: 2px solid  rgb(46, 170, 166);
@@ -698,7 +739,7 @@ html {
 
 }
 #chatbtn{
-    position: fixed;
+    position: relative;
     width: 120px;
     height: 55px;
     top: 23px;
@@ -706,7 +747,6 @@ html {
     border: 2px solid rgb(100, 210, 205);
     border-radius: 20px;
     color: white;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(9, 41, 41);
