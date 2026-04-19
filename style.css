@@ -705,7 +705,7 @@ html {
 }
 .chat-wrapper{
     position: fixed;
-    top: 50px;
+    top: 70px;
 
     left: clamp(120px, 20%, 420px);
 
