@@ -875,7 +875,7 @@ html {
     .heromyimage {
         position: fixed;
         top: 250px;
-        left: 40%;
+        left: 30%;
         transform: translateX(-50%);
         width: 70%;
         max-width: 280px;
@@ -883,8 +883,8 @@ html {
         right: auto;
     }
     .myname{
-        font-size: 35px;
-        left: 75px;
+        font-size: 22px;
+        left: 200px;
     }
     .backgroundeffect{
         top: 150px;
