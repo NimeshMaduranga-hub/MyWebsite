@@ -831,7 +831,7 @@ html {
     .myname {
         font-size: 2.0rem;
         text-align: center;
-        left: 100px;
+        left: 45px;
     }
     .myname::after {
         font-size: 2rem;
