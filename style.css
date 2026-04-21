@@ -160,11 +160,16 @@ html {
     }
 
     .menu-toggle{
+
         display: block;
         cursor: pointer;
         color: white;
         font-size: 28px;
         left: 230px;
+
+        .fixed {
+            z-index: 9999;
+        }
 
     }
 
@@ -184,6 +189,9 @@ html {
         color: #f4f4f5;
         font-size: 28px;
         cursor: pointer;
+        .fixed {
+            z-index: 9999;
+        }
     }
 
     .nav-links{
@@ -211,6 +219,16 @@ html {
         max-width: 20px;
         min-width: 480px;
     }
+    .catchall{
+        position: relative;
+        top: 260px;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
 }
 
@@ -225,6 +243,9 @@ html {
         left: 150px;
         display: block;
         color: #f4f4f5;
+        .fixed {
+            z-index: 9999;
+        }
 
     }
     .nav-links.active {
@@ -253,6 +274,9 @@ html {
         left: 110px;
         display: block;
         color: #f4f4f5;
+        .fixed {
+            z-index: 9999;
+        }
 
     }
     .nav-links.active {
@@ -261,17 +285,15 @@ html {
     }
 
     .scoundSkill{
-        display: none !important;
-        position: absolute;
-        visibility: hidden;
+        position: relative;
+
     }
     .oneSkill{
-        display: none !important;
-        position: absolute;
-        visibility: hidden;
+        position: relative;
+        top: 50px;
     }
     .myname {
-        max-width: 220px;
+        max-width: 200px;
     }
     .myname::after {
         font-size: 2rem;
@@ -306,6 +328,9 @@ html {
         left: 95px;
         display: block;
         color: #f4f4f5;
+        .fixed {
+            z-index: 9999;
+        }
 
     }
     .nav-links.active {
@@ -337,6 +362,9 @@ html {
         left: 75px;
         display: block;
         color: #f4f4f5;
+        .fixed {
+            z-index: 9999;
+        }
 
     }
     .nav-links.active {
@@ -852,10 +880,22 @@ html {
     .myname {
         font-size: 2.0rem;
         text-align: center;
-        left: 45px;
+        left: -70px;
+        z-index: 2;
     }
     .myname::after {
         font-size: 2rem;
+    }
+    .oneSkill,
+    .scoundSkill,
+    .thirdSkill,
+    .fourthskill{
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 90%;
+        max-width: 260px;
     }
 }
 .heromyimage {
@@ -903,6 +943,7 @@ html {
         max-width: 280px;
         height: auto;
         right: auto;
+        z-index: 0;
     }
 
 }
