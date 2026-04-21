@@ -824,8 +824,8 @@ html {
 
 .myname::after {
     content: '|';
-    color: #ffffff;
-    -webkit-text-fill-color: #ffffff;
+    color: #274773;
+    -webkit-text-fill-color: #1a57a8;
     margin-left: 5px;
     font-size: 3.5rem;
     animation: blink 0.8s infinite;
@@ -859,8 +859,8 @@ html {
     }
 }
 .heromyimage {
-    top: 150px;
     position: relative;
+    top: 150px;
     z-index: 2;
     width: 40%;
     height: 50%;
