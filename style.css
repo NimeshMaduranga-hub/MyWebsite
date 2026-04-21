@@ -280,6 +280,7 @@ html {
     }
     .myname {
         position: relative;
+        top: 200px;
         left: 0;
         margin-left: -50px;
         width: 65%;
@@ -859,7 +860,7 @@ html {
 }
 .heromyimage {
     top: 150px;
-    position: fixed;
+    position: relative;
     z-index: 2;
     width: 40%;
     height: 50%;
@@ -894,9 +895,9 @@ html {
 }
 @media (max-width: 600px) {
     .heromyimage {
-        position: fixed;
-        top: 250px;
-        left: 30%;
+        position: relative;
+        top: 220px;
+        left: 35%;
         transform: translateX(-50%);
         width: 70%;
         max-width: 280px;
