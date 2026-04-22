@@ -434,7 +434,7 @@ html {
     .menu-toggle{
         display: block;
         position: relative;
-        left: 100px;
+        left: 75px;
         color: #f4f4f5;
         font-size: 28px;
         cursor: pointer;
@@ -473,7 +473,7 @@ html {
 
     .glass{
         max-width: 20px;
-        min-width: 300px;
+        min-width: 250px;
     }
 
     .catchall{
