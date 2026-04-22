@@ -295,7 +295,7 @@ html {
 
     .myname{
         position: relative;
-        top: 600px;
+        top: 200px;
         left: -10px;
         width: 100%;
         text-align: center;
@@ -968,8 +968,8 @@ html {
 @media (max-width: 600px) {
     .heromyimage {
         position: relative;
-        top: 200px;
-        left: 15%;
+        top: 130px;
+        left: -10%;
         transform: translateX(-50%);
         width: 70%;
         max-width: 280px;
@@ -979,8 +979,8 @@ html {
     }
     .heroparagraph{
         position: relative;
-        top: 250px;
-        left: 0px;
+        top: 80px;
+        left: -10px;
         width: 90%;
         text-align: center;
         font-size: 16px;
@@ -988,7 +988,7 @@ html {
     }
     .myname{
         position: relative;
-        top: 600px;
+        top: 430px;
         left: -10px;
         width: 100%;
         text-align: center;
@@ -1000,7 +1000,7 @@ html {
 @media (max-width: 375px) {
     .heroparagraph{
         position: relative;
-        top: 280px;
+        top: 150px;
         left: 40px;
         width: 90%;
         text-align: center;
