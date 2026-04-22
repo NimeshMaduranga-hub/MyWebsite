@@ -93,59 +93,6 @@ html {
     color: #f4f4f5;
 }
 
-
-@media (max-width: 600px) {
-
-    .menu-toggle{
-        display: block;
-        position: relative;
-        left: 180px;
-        color: #f4f4f5;
-        font-size: 28px;
-        cursor: pointer;
-        .fixed {
-            z-index: 9999;
-        }
-    }
-
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: -10vh;
-        background: rgba(0,0,0,0.9);
-        padding: 15px;
-        border-radius: 10px;
-        z-index: 999;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-link{
-        margin: 10px 0;
-        text-align: left;
-    }
-
-    .glass{
-        max-width: 20px;
-        min-width: 480px;
-    }
-    .catchall{
-        position: relative;
-        top: 260px;
-        left: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-}
-
 #tagfreelance{
     position: fixed;
     top: 4px;
@@ -371,6 +318,28 @@ html {
     left: 200px;
 }
 @media (max-width: 600px) {
+    .menu-toggle{
+        display: block;
+        position: relative;
+        left: 130px;
+        color: #f4f4f5;
+        font-size: 28px;
+        cursor: pointer;
+        .fixed {
+            z-index: 9999;
+        }
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -10vh;
+        background: rgba(0,0,0,0.9);
+        padding: 15px;
+        border-radius: 10px;
+        z-index: 999;
+    }
     .heromyimage {
         position: relative;
         top: 100px;
@@ -380,6 +349,31 @@ html {
         right: auto;
         z-index: 0;
     }
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link{
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .glass{
+        max-width: 20px;
+        min-width: 400px;
+    }
+
+    .catchall{
+        position: relative;
+        top: 260px;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
     .myname{
         position: relative;
         top: 500px;
@@ -414,7 +408,7 @@ html {
     }
     .myname{
         position: relative;
-        top: 450px;
+        top: 400px;
         left: -40px;
         width: 100%;
         text-align: center;
@@ -423,19 +417,74 @@ html {
     }
     .ibuld{
         position: relative;
-        top: 150px;
+        top: 140px;
         left: 40px;
         font-size: 1.3rem;
         color: #88cd19;
     }
     .heroparagraph{
         position: relative;
-        top: 50px;
+        top: 40px;
         left: 0;
         width: 90%;
         text-align: center;
         font-size: 1.2rem;
         margin-top: 100px;
+    }
+    .menu-toggle{
+        display: block;
+        position: relative;
+        left: 100px;
+        color: #f4f4f5;
+        font-size: 28px;
+        cursor: pointer;
+        .fixed {
+            z-index: 9999;
+        }
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -10vh;
+        background: rgba(0,0,0,0.9);
+        padding: 15px;
+        border-radius: 10px;
+        z-index: 999;
+    }
+    .heromyimage {
+        position: relative;
+        top: 100px;
+        left: 10%;
+        width: 50%;
+        height: auto;
+        right: auto;
+        z-index: 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link{
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .glass{
+        max-width: 20px;
+        min-width: 300px;
+    }
+
+    .catchall{
+        position: relative;
+        top: 260px;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
 }
