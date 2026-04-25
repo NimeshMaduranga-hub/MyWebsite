@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #2563eb;
-    --primary-hover:  #1d4ed8;
+    --primary-color: #4dca1d;
+    --primary-hover: #33472c;
     --text-color: #1f2937;
     --bg-color:#ffffff;
     --nav-heigth:80px;
@@ -40,6 +40,7 @@ nav{
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-color);
+    text-decoration: none;
     letter-spacing: -0.5px;
 }
 .logo span{
@@ -49,6 +50,55 @@ nav{
     display: flex;
     list-style: none;
     gap: 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+.nav-links li a:hover{
+    color: var(--primary-color);
+}
+.nav-links li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.cta-btn{
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease,transform 0.2s ease;
+    border: 2px solid var(--primary-color);
+}
+.cta-btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+.cta-btn::after{
+    display: none;
+}
+.humburger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color:var(--text-color);
 }
 
 /*
