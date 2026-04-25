@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimesh Maduranga</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/portfoliologo.png" type="image/x-icon">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
 <body>
+<header class="header">
+
+    <div class="container">
+        <!--Logo eka danne methana-->
+        <div class="logo">
+            <a href="assets/logo.png">Nimesh</a>
+        </div>
+
+        <!--methana thamai Navigation hadanne -->
+
+    </div>
+</header>
+<!--
 
 <nav class="fixed newnavbar">
 
     <div class="glass round">
 
-        <!--methanin thamai api logo eka daganne -->
+        &lt;!&ndash;methanin thamai api logo eka daganne &ndash;&gt;
 
         <a href="#" class="item_center">
             <div class="round_glass_div">
-                <img class="imagenavbar" src="assets/portfoliologo.png" alt="logo">
+                <img class="imagenavbar" src="assets/logo.png" alt="logo">
             </div>
         </a>
 
@@ -93,8 +105,7 @@
 
 <main>
 <section class="about-section">
-
-    <!--about image eka-->
+    &lt;!&ndash;about image eka&ndash;&gt;
     <div class="about-image-wrapper">
         <div class="image-blob"></div>
         <img src="assets/imagemy.jpg" alt="Profile Photo" class="about-image">
@@ -133,6 +144,7 @@
         </div>
     </div>
 </section>
+
 </main>
 
 <section class="skills-container">
@@ -151,7 +163,9 @@
 
 </section>
 <section id="contact" class="section">
+
     <hr class="contacthr">
+
     <div class="container">
 
         <div class="glass-card">
@@ -322,6 +336,7 @@
         </div>
     </div>
 </section>
+
 <script>
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".nav-links");
@@ -330,6 +345,7 @@
         nav.classList.toggle("active");
     });
 </script>
+
 <script>
     const paraTexts = [
         "Clean and modern web applications.",
@@ -349,7 +365,7 @@
 
         if (pDeleting) {
             paraElement.textContent = currentText.substring(0, pChar - 1);
-            pChar--;
+            pChar&#45;&#45;;
             pSpeed = 40;
         } else {
             paraElement.textContent = currentText.substring(0, pChar + 1);
@@ -372,10 +388,12 @@
 
     setTimeout(typeParagraph, 2000);
 </script>
-<footer>
+-->
+
+<!--<footer>
     <div class="container">
         <p>&copy; 2026 Nimesh Maduranga. All rights reserved.</p>
     </div>
-</footer>
+</footer>-->
 </body>
 </html>
