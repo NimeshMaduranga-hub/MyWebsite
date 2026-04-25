@@ -411,5 +411,18 @@
         <p>&copy; 2026 Nimesh Maduranga. All rights reserved.</p>
     </div>
 </footer>-->
+<script>
+    const hamberger=document.querySelector('.humburger');
+    const navLinks=document.querySelector('.nav-links');
+
+    hamberger.addEventListener('click' ,() =>{
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links li a').forEach(limk =>{
+        limk.addEventListener('click',() =>{
+            navLinks.classList.remove('active')
+        });
+    });
+</script>
 </body>
 </html>
