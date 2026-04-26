@@ -104,6 +104,11 @@
 
 </main>
 
+<section id="about" class="section-placeholder">
+    <div>
+
+    </div>
+</section>
 <section id="contact" class="contact-section">
 
     <div class="contact-container">
@@ -116,6 +121,7 @@
                 <div class="badge">
                     <span>Get in Touch</span>
                 </div>
+            </div>
             <h2>Let's build something <br>
                 <span class="text-gradient">amazing</span>together
             </h2>
@@ -182,61 +188,6 @@
     </div>
 </section>
 
-<script>
-    const hamberger=document.querySelector('.humburger');
-    const navLinks=document.querySelector('.nav-links');
-
-    hamberger.addEventListener('click' ,() =>{
-        navLinks.classList.toggle('active');
-    });
-    document.querySelectorAll('.nav-links li a').forEach(limk =>{
-        limk.addEventListener('click',() =>{
-            navLinks.classList.remove('active')
-        });
-    });
-
-    const typingElement =document.getElementById('typing-text');
-    const  roles =[
-        "Frontend Developer",
-        "UI/UX Designer",
-        "Freelancer",
-        "Backend Developer",
-        "Graphic Designer",
-    ];
-    let roleIndex=0;
-    let charIndex=0;
-    let isDeleting=false;
-    let typeSpeed=100;
-
-    function type() {
-
-        const currentRole=roles[roleIndex];
-        if (isDeleting){
-            //text eka delete wenna
-            typingElement.textContent=currentRole.substring(0,charIndex-1);
-            charIndex--;
-            typeSpeed=50;
-        }else {
-            typingElement.textContent=currentRole.substring(0,charIndex +1);
-            charIndex++;
-            typeSpeed=100;
-        }
-        if (!isDeleting && charIndex === currentRole.length) {
-
-            isDeleting = true;
-            typeSpeed = 2000;
-        } else if (isDeleting && charIndex === 0) {
-
-            isDeleting = false;
-            roleIndex = (roleIndex + 1) % roles.length;
-            typeSpeed = 500;
-        }
-
-        setTimeout(type, typeSpeed);
-    }
-    document.addEventListener('DOMContentLoaded', type);
-
-</script>
 <footer class="site-footer">
     <div class="container">
         <div class="footer-top">
@@ -294,5 +245,92 @@
     </div>
 </footer>
 
+<script>
+    const hamberger=document.querySelector('.humburger');
+    const navLinks=document.querySelector('.nav-links');
+
+    hamberger.addEventListener('click' ,() =>{
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links li a').forEach(limk =>{
+        limk.addEventListener('click',() =>{
+            navLinks.classList.remove('active')
+        });
+    });
+
+    const typingElement =document.getElementById('typing-text');
+    const  roles =[
+        "Frontend Developer",
+        "UI/UX Designer",
+        "Freelancer",
+        "Backend Developer",
+        "Graphic Designer",
+    ];
+    let roleIndex=0;
+    let charIndex=0;
+    let isDeleting=false;
+    let typeSpeed=100;
+
+    function type() {
+
+        const currentRole=roles[roleIndex];
+        if (isDeleting){
+            //text eka delete wenna
+            typingElement.textContent=currentRole.substring(0,charIndex-1);
+            charIndex--;
+            typeSpeed=50;
+        }else {
+            typingElement.textContent=currentRole.substring(0,charIndex +1);
+            charIndex++;
+            typeSpeed=100;
+        }
+        if (!isDeleting && charIndex === currentRole.length) {
+
+            isDeleting = true;
+            typeSpeed = 2000;
+        } else if (isDeleting && charIndex === 0) {
+
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+    document.addEventListener('DOMContentLoaded', type);
+
+    const contactForm = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+    const submitBtn = contactForm.querySelector('.btn-submit');
+    const originalBtnText = submitBtn.innerHTML;
+
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending...</span><i class="fa-solid fa-spinner fa-spin"></i>';
+        submitBtn.style.opacity = '0.7';
+
+        setTimeout(() => {
+            // Show Toast
+            toast.classList.add('show');
+
+            // Reset Form
+            contactForm.reset();
+
+            // Reset Button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.style.opacity = '1';
+
+            // Hide Toast after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+
+        }, 1500);
+    });
+
+</script>
 </body>
 </html>
