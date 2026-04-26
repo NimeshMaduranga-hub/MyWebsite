@@ -97,14 +97,146 @@
         </div>
     </div>
 
-    <a href="#about" class="scroll-down">
+    <a href="#contact" class="scroll-down">
         <span>Scroll Down</span>
         <i class="fa-solid fa-arrow-down"></i>
     </a>
+
 </main>
 
-<!--ContactSection-->
+<section id="contact" class="contact-section">
 
+    <div class="contact-container">
+        <div class="glass-card">
+            <div class="glow-blob"></div>
+
+            <div class="grid grid-md2 content-wrapper"></div>
+            <!--gettuch colum-->
+            <div class="left-col">
+                <div class="badge">
+                    <span>Get in Touch</span>
+                </div>
+            <h2>Let's build something <br>
+                <span class="text-gradient">amazing</span>together
+            </h2>
+            <p class="subtitle">
+                Ready to build something awesome? I'm here to help.Send me a message and let's create something powerfull together.
+            </p>
+            <div class="flex flex-col">
+                <a href="mailto:madurangan912@gmail.com" class="contact-link">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    madurangan912@gmail.com
+                </a>
+                <a href="https://www.google.com/maps?q=Colombo,+Sri+Lanka" target="_blank" class="contact-link">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    Colombo,Srilanka
+                </a>
+            </div>
+
+            <form id="contactForm" autocomplete="off">
+                <div class="form-group">
+                    <label for ="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="project">Project Type</label>
+                    <select id="project" required class="form-control">
+                        <option value="" class="dark-option">Select a type</option>
+                        <option value="web" class="dark-option">Web Application</option>
+                        <option value="mobile" class="dark-option">Mobile App</option>
+                        <option value="desing" class="dark-option">UI/UX Design</option>
+                        <option value="grapic" class="dark-option">Graphic Design</option>
+                        <option value="thubnail" class="dark-option">YouTube Thumbnail</option>
+                        <option value="logo" class="dark-option">Logo Design</option>
+                        <option value="business-poster"class="dark-option">Business Poster Design</option>
+                        <option value="album-cover">Album Cover Design</option>
+                        <option value="other" class="dark-option">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell me about your project.." required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <span >Send Message</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    const hamberger=document.querySelector('.humburger');
+    const navLinks=document.querySelector('.nav-links');
+
+    hamberger.addEventListener('click' ,() =>{
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links li a').forEach(limk =>{
+        limk.addEventListener('click',() =>{
+            navLinks.classList.remove('active')
+        });
+    });
+
+    const typingElement =document.getElementById('typing-text');
+    const  roles =[
+        "Frontend Developer",
+        "UI/UX Designer",
+        "Freelancer",
+        "Backend Developer",
+        "Graphic Designer",
+    ];
+    let roleIndex=0;
+    let charIndex=0;
+    let isDeleting=false;
+    let typeSpeed=100;
+
+    function type() {
+
+        const currentRole=roles[roleIndex];
+        if (isDeleting){
+            //text eka delete wenna
+            typingElement.textContent=currentRole.substring(0,charIndex-1);
+            charIndex--;
+            typeSpeed=50;
+        }else {
+            typingElement.textContent=currentRole.substring(0,charIndex +1);
+            charIndex++;
+            typeSpeed=100;
+        }
+        if (!isDeleting && charIndex === currentRole.length) {
+
+            isDeleting = true;
+            typeSpeed = 2000;
+        } else if (isDeleting && charIndex === 0) {
+
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+    document.addEventListener('DOMContentLoaded', type);
+
+</script>
 <footer class="site-footer">
     <div class="container">
         <div class="footer-top">
@@ -162,59 +294,5 @@
     </div>
 </footer>
 
-<script>
-    const hamberger=document.querySelector('.humburger');
-    const navLinks=document.querySelector('.nav-links');
-
-    hamberger.addEventListener('click' ,() =>{
-        navLinks.classList.toggle('active');
-    });
-    document.querySelectorAll('.nav-links li a').forEach(limk =>{
-        limk.addEventListener('click',() =>{
-            navLinks.classList.remove('active')
-        });
-    });
-
-    const typingElement =document.getElementById('typing-text');
-    const  roles =[
-        "Frontend Developer",
-        "UI/UX Designer",
-        "Freelancer",
-        "Backend Developer"
-    ];
-    let roleIndex=0;
-    let charIndex=0;
-    let isDeleting=false;
-    let typeSpeed=100;
-
-    function type() {
-
-        const currentRole=roles[roleIndex];
-        if (isDeleting){
-            //text eka delete wenna
-            typingElement.textContent=currentRole.substring(0,charIndex-1);
-            charIndex--;
-            typeSpeed=50;
-        }else {
-            typingElement.textContent=currentRole.substring(0,charIndex +1);
-            charIndex++;
-            typeSpeed=100;
-        }
-        if (!isDeleting && charIndex === currentRole.length) {
-
-            isDeleting = true;
-            typeSpeed = 2000;
-        } else if (isDeleting && charIndex === 0) {
-
-            isDeleting = false;
-            roleIndex = (roleIndex + 1) % roles.length;
-            typeSpeed = 500;
-        }
-
-        setTimeout(type, typeSpeed);
-    }
-    document.addEventListener('DOMContentLoaded', type);
-
-</script>
 </body>
 </html>
