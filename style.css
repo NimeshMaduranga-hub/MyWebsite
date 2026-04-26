@@ -429,10 +429,20 @@ nav{
     }
     .hero-content{
         order: 2;
+        top: 10px;
     }
     .hero-image-wrapper{
         order: 1;
         margin-bottom: 30px;
+        top: -60px;
+    }
+    .badge{
+        position: relative;
+        bottom: 100px;
+    }
+    .hero-name{
+        position: relative;
+        bottom: 90px;
     }
     .hero-img{
         width: 380px;
@@ -440,12 +450,22 @@ nav{
     }
     .btn-group{
         justify-content: center;
+        position: relative;
+        bottom: 60px;
     }
     .social-proof{
         justify-content: center;
+        position: relative;
+        bottom: 60px;
     }
     .hero-title{
         justify-content: center;
+        position: relative;
+        bottom: 80px;
+    }
+    .hero-desc{
+        position: relative;
+        bottom: 80px;
     }
     .scroll-down{
         bottom: 1px;
@@ -461,6 +481,8 @@ nav{
     }
     .btn-group{
         flex-direction: column;
+        position: relative;
+        bottom: 50px;
     }
     .btn{
         width: 100%;
@@ -472,5 +494,13 @@ nav{
     }
     .scroll-down{
         bottom: 1px;
+    }
+    .social-proof{
+        justify-content: center;
+        position: relative;
+        bottom: 70px;
+    }
+    .hero-desc{
+        bottom: 40px;
     }
 }
