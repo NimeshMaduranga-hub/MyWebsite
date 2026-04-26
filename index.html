@@ -22,7 +22,6 @@
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
                 <line x1="3" y1="18" x2="21" y2="18"></line>
-
             </svg>
         </button>
 
@@ -38,6 +37,71 @@
         </ul>
     </nav>
 </header>
+
+
+<!--Hero Section eka-->
+<main class="hero-section" id="home">
+    <!--backgournd decorate-->
+    <div class="hero-bg-shape shape-1"></div>
+    <div class="hero-bg-shape shape-2"></div>
+
+    <div class="hero-container">
+        <!--left text-->
+        <div class="hero-content">
+            <div class="badge">Welcome to my World</div>
+            <!--myBrandname-->
+            <h1 class="hero-name">Nimesh Maduranga</h1>
+
+            <div class="hero-title">
+                <span>I am a</span>
+                <span class="typing-txt" id="typing-text"></span>
+            </div>
+            <!--intro-->
+            <p class="hero-desc">
+                I design and develop modern, high-performance websites that help businesses grow. Let's build something amazing together.
+            </p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i>Hire Me
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <i class="fa-solid fa-eye"></i>View Work
+                </a>
+            </div>
+            <!--social proof-->
+            <div class="social-proof">
+                <div class="stat-item">
+                    <h3>01+</h3>
+                    <p>Project Done</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3+</h3>
+                    <p>Years Exp.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>01+</h3>
+                    <p>Clients</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <!--icons-->
+            <div class="tech-icon html" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+            <div class="tech-icon css" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="tech-icon js" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+            <div class="tech-icon react" title="React"><i class="fa-brands fa-react"></i></div>
+
+            <img src="assets/imagehero.png" alt="Nimesh Maduranga" class="hero-img">
+
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+</main>
 
 <!--
 
@@ -412,7 +476,7 @@
         <p>&copy; 2026 Nimesh Maduranga. All rights reserved.</p>
     </div>
 </footer>-->
-<script>
+<!--<script>
     const hamberger=document.querySelector('.humburger');
     const navLinks=document.querySelector('.nav-links');
 
@@ -422,6 +486,108 @@
     document.querySelectorAll('.nav-links li a').forEach(limk =>{
         limk.addEventListener('click',() =>{
             navLinks.classList.remove('active')
+        });
+    });
+</script>-->
+<script>
+    /* -------------------------------------------------------
+       NAVBAR TOGGLE
+    ------------------------------------------------------- */
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        // Hamburger icon animation change
+        const icon = hamburger.querySelector('i');
+        if (navLinks.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Close menu when link clicked
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        });
+    });
+
+    /* -------------------------------------------------------
+       TYPING ANIMATION (8️⃣ Extra)
+    ------------------------------------------------------- */
+    const typingElement = document.getElementById('typing-text');
+    const roles = [
+        "Frontend Developer",
+        "UI/UX Designer",
+        "Freelancer",
+        "Tech Enthusiast"
+    ];
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+        const currentRole = roles[roleIndex];
+
+        if (isDeleting) {
+            // Deleting text
+            typingElement.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50; // Deleting is faster
+        } else {
+            // Typing text
+            typingElement.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100; // Typing speed
+        }
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            // Finished typing word, pause before deleting
+            isDeleting = true;
+            typeSpeed = 2000;
+        } else if (isDeleting && charIndex === 0) {
+            // Finished deleting, move to next word
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    // Start animation on load
+    document.addEventListener('DOMContentLoaded', type);
+
+    /* -------------------------------------------------------
+       SCROLL SPY (Highlight Active Nav Link)
+    ------------------------------------------------------- */
+    const sections = document.querySelectorAll('section, main');
+    const navItems = document.querySelectorAll('.nav-links li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - 150)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) {
+                a.classList.add('active');
+            }
         });
     });
 </script>
