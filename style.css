@@ -828,6 +828,19 @@ nav{
     position: relative;
     padding: 20px 0;
 }
+.oitawrdpng{
+    position: relative;
+    max-width: 400px;
+    border-radius: 20px;
+    right: 10px;
+}
+.orelitlogo{
+    max-width: 60px;
+    border-radius: 15px;
+    position: relative;
+    left: 0px;
+    bottom: 50px;
+}
 .timeline::before{
     content: '';
     position: absolute;
@@ -1013,6 +1026,24 @@ nav{
     }
     .section-title{
         font-size: 2rem;
+    }
+
+    .oitawrdpng{
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        border-radius: 20px;
+        right: 0;
+    }
+    .orelitlogo{
+        width: 100%;
+        max-width: 60px;
+        height: auto;
+        border-radius: 15px;
+        position: relative;
+        left: 0;
+        bottom: 0;
     }
 }
 
